@@ -37,6 +37,7 @@
 
 	function generateJoke() {			//generates a random joke
 		j = getRandomInt(min, max);
+		console.log(joke_list[j], j)
 		text_element.innerHTML = joke_list[j]
 	}
 }());
