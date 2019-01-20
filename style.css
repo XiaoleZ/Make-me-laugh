@@ -23,13 +23,31 @@ body * {
 	flex: 1;
 }
 
+/*changes..*/
+.centreImage {
+	position: absolute;
+	left: 40%;
+	top: 390px;
+}
+
+
 h1 {
 /* 	margin-top: 5%; */
-	color:black;
+	color: #333333;;
 	font-size: 5em;
 	font-family: Verdana;
 	text-align: center;
+
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
+
+
+
+#demotext {
+/*color: #202c2d;
+background: #FFFFFF;
+background: #FFFFFF;
+}*/
 
 p {
 	color: darkblue;
@@ -65,8 +83,6 @@ a#joke_button {
 }
 a#joke_button:visited img, a#joke_button:active img {
     /* background-image: url(button1.png); */
-    left: 0px;
-    right: 0px;
     
 }
 
