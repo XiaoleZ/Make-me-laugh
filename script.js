@@ -47,7 +47,7 @@
 		var x = document.getElementById("image0");
 		var v = x.getAttribute("src");
   		if(v === "button1.png"){
-			v = "button2.png";
+			v = "button4.png";
 		}	
 		  else{
 			  v = "button3.png";
