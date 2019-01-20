@@ -49,35 +49,63 @@ footer{
     left: 25%;
 }
 
-#demotext {
-/*color: #202c2d;
-background: #FFFFFF;
-background: #FFFFFF;
-}*/
-
 p {
 	color: darkblue;
     font-size:2em;
     
 }
 
-/* button { */
-/* 	margin-bottom: 5%; */
-    /* background: url("button1.png");
-	height: 5%;
-	font-size: 6em;
-	background: none;
-	border: none;
-	outline: none;
-} */
+.smily {
+    position: absolute;
+    top:95%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    width: 60px;
+    height: 60px;
+    background: yellow;
+    border-radius: 50%;
+    border:5px solid black;
+}
 
-/* form input[type=submit] {
-	background : url("button1.png") no-repeat center center;
-	width : 115px;
-	height :52px;
-	border : none;
-	color : transparent;
-} */
+.eyes:before, .eyes:after {
+    content:'';
+    position: absolute;
+    top:30%;
+    width:5px;
+    height:5px;
+    border-radius:50%;
+    background: black;
+    transition:.5s;
+}
+
+.eyes:before {
+    left: 25%;
+}
+.eyes:after {
+    right: 25%;
+}
+.eyes:hover:before,
+.eyes:hover:after{
+    transform: scale(2);
+}
+.lips
+{
+    position: absolute;
+    top:20%;
+    left:50%;
+    transform: translateX(-50%);
+    width:8px;
+    height:30px;
+    border: 1px solid transparent;
+    border-bottom: 1px solid #442200;
+    border-radius: 0;
+    transition: .5s;
+
+}
+.smily:hover .lips{
+    width:30px;
+    border-radius:50%;
+}
 
 a#joke_button {
     max-width: 0%;
