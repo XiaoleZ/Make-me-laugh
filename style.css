@@ -1,25 +1,18 @@
 /* General Styles */
-<!doctype html>
-<html lang="en">
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=yes"/>
-	<title>Dashboard </title>
-	<meta name="description" content="?">
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color:gold
+}
 
-	<link rel="stylesheet" href="./style.css">
-</head>
-
-<body>
-	<h1>Make me laugh</h1>
-	<p>A site to forget about your problems and just laugh lol</p>
-	<!---ADD IMAGE HERE (CHARLOTE)-->
-	<a href="https://">Extracted from here</a>
-	<button>Click me</button>
-	<ul>
-		<li></li>
-	</ul>
-
-	<script src="./script.js"></script>
-</body>
-</html>
+h1{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    text-align: center;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 3em;
+}
