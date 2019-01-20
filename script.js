@@ -21,7 +21,11 @@ var q = 0;
 		'What is blue and goes ding dong?\nAn Avon lady at the North Pole!',
 		'We\'re you long in the hospital?\nNo, I was the same size I am now!',
 		'Why couldn\'t the pirate play cards?\nBecause he was sitting on the deck!',
-		'What did the laundryman say to the impatient customer?\nKeep your shirt on!'
+		'What did the laundryman say to the impatient customer?\nKeep your shirt on!',
+		'What did the red light say to the green light?\nDon\'t look, I\'m changing.',
+		'Did you just fart?\n Because you just blow me away',
+		'Do you still love me>\n!yes babe',
+		'Choosing my kids\' name was easier than deciding what to name this variable',
 	],
 			max = joke_list.length-1
 	
