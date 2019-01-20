@@ -2,6 +2,7 @@
 * {
 	margin: 0;
 	padding: 0;
+	align: center;
 }
 
 html {
@@ -12,6 +13,7 @@ body {
     background-image: url("smile.gif");
 	background-color: gold;
 	height: 100%;
+	align-items: center;
 }
 
 h1 {
@@ -20,6 +22,7 @@ h1 {
 
 p {
 	color: aquamarine;
+	
 }
 
 #container {
