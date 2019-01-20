@@ -32,16 +32,12 @@
 			min = Math.ceil(min);
 				max = Math.floor(max);
 				num = Math.floor(Math.random() * (max - min + 1)) + min;
-		console.log(num);
 		return num;
 	}
 
 	function generateJoke() {			//generates a random joke
 		j = getRandomInt(min, max);
-		console.log(j);
-
 		joke = joke_list[j];
-		console.log(joke);
 		return joke;
 	}
 }());
