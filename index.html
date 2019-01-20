@@ -9,16 +9,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Sura:400,700" rel="stylesheet">
 </head>
 
+<style>
+#image0{
+	position: fixed;
+}
+</style>
+
+<script type="text/javascript>">
+function Init(){
+	pic = document.getElementById("image0");
+	spaceW = screen.height - pic.height;
+	spaceM = screen.width - pic.width;
+	setInterval(moveIt, 500 );
+}
+
+function moveIt(){
+	pic.style.top = Math.round(Math.random * spaceW)+ "px";
+	pic.style.letf = Math.round(Math.random * spaceM)+ "px";
+}
+</script>
+
 <body>
 
 	<header></header>
 	<h1 id="joke_text">I dare you to make me laugh!<br></h1>
 
 	<!---ADD IMAGE HERE (CHARLOTE)-->
-	<!-- <button id="joke_button">☻</button> -->
+	<a id="joke_button"><img class = "centreImage" id = "image0" src="button1.png" onclick="changeImage(this)";/></a>
 
-	<a id="joke_button"><img class = "centreImage" id = "image0" src="button1.png" onclick="changeImage(this);"/></a>
-
+	<a href = "https://www.youtube.com/watch?v=t_Kd_G7p6ZQ" id="player"><img class = "centreMusic" id = "music" src="player.png";/></a>
 	<!-- <input type=”image” src=”button.png” alt=”submit” name=”submit” /> -->
 
 	<footer> A site to forget about your problems and just laugh lol. Press the smiley face to see another joke</footer>
