@@ -1,13 +1,17 @@
 /* General Styles */
+
+
+
+
 html {
 	height: 100%;
 }
 
 body {
 	margin: 0;
-	padding: 0;
-    background-image: url("smile.gif");
-	background-color: gold;
+    padding: 0;
+    background-image: url(dog1.gif);
+	background-size: cover;
 	height: 100%;
 	align-items: center;
 	text-align: center;
@@ -39,7 +43,7 @@ button {
 	font-size: 6em;
 	background: none;
 	border: none;
-	outline: none;
+    outline: none;
 }
 
 #container {

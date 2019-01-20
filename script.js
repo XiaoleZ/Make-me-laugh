@@ -24,8 +24,10 @@
 	],
 			max = joke_list.length
 
+
 	document.getElementById('joke_button').addEventListener('click', function(){
 		generateJoke();
+		generateImg();
 	});
 
 	function getRandomInt(min, max) {		//returns a random integer
@@ -40,4 +42,14 @@
 		console.log(joke_list[j], j)
 		text_element.innerHTML = joke_list[j]
 	}
+
+	var bg_img = ['bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif'],
+	img_max = bg_img.length-1
+
+	function generateImg() {
+		j = getRandomInt(min, img_max);
+		console.log(bg_img[j], j)
+		document.body.style.backgroundImage="url('"+bg_img[j]+"')"
+	}
+
 }());
