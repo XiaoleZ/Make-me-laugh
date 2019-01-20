@@ -4,7 +4,7 @@ var q = 0;
 			min = 0,
 			j, joke, num,
 			joke_list = [
-		'What does r?\nStairs',
+		'What does rhyme with cucumber?\nYour number',
 		'Where should a 500 pound alien go?\nOn a diet',
 		'What did one toilet say to the other?\nYou look a bit flushed.',
 		'Why did the picture go to jail?\nBecause it was framed.',
