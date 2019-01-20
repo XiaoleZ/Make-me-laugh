@@ -16,7 +16,8 @@ body {
 	text-align: center;
 	/* display: center; */
     flex-direction: column;
-	align-content: center;
+    align-content: center;
+    
 }
 
 body * {
@@ -37,16 +38,18 @@ h1 {
 	color: #333333;;
 	font-size: 5em;
 	font-family: Verdana;
-	text-align: center;
-
-	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    text-align: center;
+    line-height: 1em;
+    white-space: pre-wrap;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    word-wrap: break-word;
 }
 
 footer{
     position: absolute;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
     top: 600px;
-    left: 25%;
+    left: 28%;
 }
 
 #demotext {
