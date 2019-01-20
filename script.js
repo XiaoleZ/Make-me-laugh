@@ -1,7 +1,7 @@
 (function () {
-	var min = 0,
+	var text_element = document.getElementById('joke_text'),
+			min = 0,
 			j, joke, num,
-			n = 2,
 			joke_list = [
 		'Q: What goes up and down but does not move?\nA: Stairs',
 		'Q: Where should a 500 pound alien go?\nA: On a diet',
@@ -29,15 +29,14 @@
 	});
 
 	function getRandomInt(min, max) {		//returns a random integer
-			min = Math.ceil(min);
-				max = Math.floor(max);
-				num = Math.floor(Math.random() * (max - min + 1)) + min;
+		min = Math.ceil(min);
+		max = Math.floor(max);
+		num = Math.floor(Math.random() * (max - min + 1)) + min;
 		return num;
 	}
 
 	function generateJoke() {			//generates a random joke
 		j = getRandomInt(min, max);
-		joke = joke_list[j];
-		return joke;
+		text_element.innerHTML = joke_list[j]
 	}
 }());
