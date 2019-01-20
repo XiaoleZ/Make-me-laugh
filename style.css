@@ -6,21 +6,8 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-    background-image: url('smile.gif');
-=======
     background-image: url("smile.gif");
->>>>>>> c06432f3cf92c15951b94e8ea28c98666828fff0
 	background-color: gold;
-=======
-    background-image: url("backgound2.gif");
-
-   
-    
-    
-    background-color: gold;
->>>>>>> Stashed changes
 	height: 100%;
 	align-items: center;
 	text-align: center;
@@ -34,22 +21,10 @@ body * {
 }
 
 h1 {
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-	color:black;
-	font-size: 3em;
-=======
-/* 	margin-top: 5%; */
-	color:pink;
-	font-size: 5em;
-	font-family: Verdana;
->>>>>>> Stashed changes
-=======
 /* 	margin-top: 5%; */
 	color:black;
 	font-size: 5em;
 	font-family: Verdana;
->>>>>>> c06432f3cf92c15951b94e8ea28c98666828fff0
 	text-align: center;
 }
 
@@ -66,18 +41,6 @@ p {
 	background: none;
 	border: none;
 	outline: none;
-<<<<<<< HEAD
-<<<<<<< Updated upstream
-	transform-origin: 50% 50%;
-	transition: transform .5s;
-}
-
-button:hover {
-	transform: scale(1.2);
-=======
-	color: pink
->>>>>>> Stashed changes
-=======
 } */
 
 /* form input[type=submit] {
@@ -102,7 +65,6 @@ a#joke_button:visited img, a#joke_button:active img {
     left: 0px;
     right: 0px;
     
->>>>>>> c06432f3cf92c15951b94e8ea28c98666828fff0
 }
 
 #container {
