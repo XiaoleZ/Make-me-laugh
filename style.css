@@ -33,11 +33,21 @@ body * {
 
 h1 {
 /* 	margin-top: 5%; */
-	color:black;
+	color: #333333;;
 	font-size: 5em;
 	font-family: Verdana;
 	text-align: center;
+
+	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
+
+
+
+#demotext {
+/*color: #202c2d;
+background: #FFFFFF;
+background: #FFFFFF;
+}*/
 
 p {
 	color: darkblue;
