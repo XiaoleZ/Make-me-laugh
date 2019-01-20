@@ -26,16 +26,21 @@ h1 {
 	font-size: 4em;
 	font-family: Verdana;
 	text-align: center;
+	min-height:
 }
 
 p {
 	color: darkblue;
-	font-size:200%;
+	font-size: 200%;
 }
 
 button {
 /* 	margin-bottom: 5%; */
 	height: 5%;
+	font-size: 6em;
+	background: none;
+	border: none;
+	outline: none;
 }
 
 #container {
