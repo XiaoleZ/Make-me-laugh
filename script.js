@@ -47,7 +47,7 @@ var q = 0;
 		text_element.innerHTML = joke_list[j]
 	}
 
-	var bg_img = ['bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif'],
+	var bg_img = ['bird1.gif','cat1.gif','cat2.gif', 'background3,', 'background2', 'background1','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif'],
 	img_max = bg_img.length-1
 
 	function generateImg() {
