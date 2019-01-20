@@ -41,7 +41,7 @@ h1 {
     text-align: center;
     line-height: 1em;
     white-space: pre-wrap;
-    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    text-shadow: 4px 7px 1px #FFFFFF, 6px 5px 7px rgba(0,0,0,0.15);
     word-wrap: break-word;
 }
 
