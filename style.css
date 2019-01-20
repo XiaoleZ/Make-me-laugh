@@ -6,8 +6,17 @@ html {
 body {
 	margin: 0;
 	padding: 0;
+<<<<<<< Updated upstream
     background-image: url('smile.gif');
 	background-color: gold;
+=======
+    background-image: url("backgound2.gif");
+
+   
+    
+    
+    background-color: gold;
+>>>>>>> Stashed changes
 	height: 100%;
 	align-items: center;
 	text-align: center;
@@ -18,8 +27,15 @@ body {
 }
 
 h1 {
+<<<<<<< Updated upstream
 	color:black;
 	font-size: 3em;
+=======
+/* 	margin-top: 5%; */
+	color:pink;
+	font-size: 5em;
+	font-family: Verdana;
+>>>>>>> Stashed changes
 	text-align: center;
 	margin: 0 4%;
 }
@@ -39,12 +55,16 @@ button {
 	background: none;
 	border: none;
 	outline: none;
+<<<<<<< Updated upstream
 	transform-origin: 50% 50%;
 	transition: transform .5s;
 }
 
 button:hover {
 	transform: scale(1.2);
+=======
+	color: pink
+>>>>>>> Stashed changes
 }
 
 #container {
