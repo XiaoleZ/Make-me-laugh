@@ -1,3 +1,4 @@
+var q = 0;
 (function () {
 	var text_element = document.getElementById('joke_text'),
 			min = 0,
@@ -22,12 +23,15 @@
 		'Q: Why couldn\'t the pirate play cards?\nA: Because he was sitting on the deck!',
 		'Q: What did the laundryman say to the impatient customer?\nA: Keep your shirt on!'
 	],
-			max = joke_list.length
-
-
+			max = joke_list.length-1
+	
 	document.getElementById('joke_button').addEventListener('click', function(){
+		q = q +1;
+		q = q % 7;
 		generateJoke();
+		changeImage(q);
 		generateImg();
+		
 	});
 
 	function getRandomInt(min, max) {		//returns a random integer
@@ -43,7 +47,7 @@
 		text_element.innerHTML = joke_list[j]
 	}
 
-	var bg_img = ['bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif'],
+	var bg_img = ['bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif'],
 	img_max = bg_img.length-1
 
 	function generateImg() {
@@ -52,4 +56,11 @@
 		document.body.style.backgroundImage="url('"+bg_img[j]+"')"
 	}
 
+	var img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png","button6.png","button7.png"];
+
+	function changeImage(index){
+		var x = document.getElementById("image0");
+		// var v = x.getAttribute("src");	
+  		x.setAttribute("src", img_button[index]);	
+	}
 }());

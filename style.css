@@ -11,11 +11,10 @@ body {
 	margin: 0;
     padding: 0;
     background-image: url(dog1.gif);
-	background-size: cover;
 	height: 100%;
 	align-items: center;
 	text-align: center;
-	display: flex;
+	display: center;
     flex-direction: column;
 	align-content: center;
 }
@@ -37,13 +36,38 @@ p {
 	font-size:2em;
 }
 
-button {
+/* button { */
 /* 	margin-bottom: 5%; */
+    /* background: url("button1.png");
 	height: 5%;
 	font-size: 6em;
 	background: none;
 	border: none;
-    outline: none;
+	outline: none;
+} */
+
+/* form input[type=submit] {
+	background : url("button1.png") no-repeat center center;
+	width : 115px;
+	height :52px;
+	border : none;
+	color : transparent;
+} */
+
+a#joke_button {
+    max-width: 0%;
+    border: 0;
+    height: 120px;
+    left: 0px;
+    right: 0px;
+    width: 0px;
+    /* width : 10px; */
+}
+a#joke_button:visited img, a#joke_button:active img {
+    /* background-image: url(button1.png); */
+    left: 0px;
+    right: 0px;
+    
 }
 
 #container {
