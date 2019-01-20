@@ -14,15 +14,19 @@ body {
 	background-color: gold;
 	height: 100%;
 	align-items: center;
+	text-align: center;
 }
 
 h1 {
 	color:black;
 	font-size: 500%;
+	font-family: Verdana;
+	text-align: center;
 }
 
 p {
-	color: aquamarine;
+	color: darkblue;
+	font-size:200%;
 	
 }
 
