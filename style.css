@@ -14,7 +14,7 @@ body {
 	height: 100%;
 	align-items: center;
 	text-align: center;
-	display: center;
+	/* display: center; */
     flex-direction: column;
 	align-content: center;
 }
@@ -25,9 +25,10 @@ body * {
 
 /*changes..*/
 .centreImage {
-	position: absolute;
-	left: 40%;
-	top: 390px;
+    position: absolute;
+    width: 150px;
+    left: 45%;
+    top:400px;
 }
 
 
@@ -41,7 +42,12 @@ h1 {
 	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
 }
 
-
+footer{
+    position: absolute;
+    text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    top: 600px;
+    left: 25%;
+}
 
 #demotext {
 /*color: #202c2d;
@@ -51,7 +57,8 @@ background: #FFFFFF;
 
 p {
 	color: darkblue;
-	font-size:2em;
+    font-size:2em;
+    
 }
 
 /* button { */
