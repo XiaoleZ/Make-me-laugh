@@ -3,9 +3,24 @@
 	margin: 0;
 	padding: 0;
 }
+
+html {
+	height: 100%;
+}
+
 body {
 	background-color:gold;
+	height: 100%;
 }
+
+h1 {
+	color:aquamarine;
+}
+
+p {
+	color: aquamarine;
+}
+
 #container {
 	color:aquamarine;
 	position: absolute;
