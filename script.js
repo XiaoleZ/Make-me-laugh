@@ -27,7 +27,7 @@ var q = 0;
 	
 	document.getElementById('joke_button').addEventListener('click', function(){
 		q = q +1;
-		q = q % 5;
+		q = q % 7;
 		generateJoke();
 		changeImage(q);
 		
@@ -46,7 +46,7 @@ var q = 0;
 		text_element.innerHTML = joke_list[j]
 	}
 
-	var img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png"];
+	var img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png","button6.png","button7.png"];
 
 	function changeImage(index){
 		var x = document.getElementById("image0");
