@@ -1,5 +1,9 @@
 (function () {
-	joke_list = [
+	var min = 0,
+			j, joke, num,
+			n = 2,
+			max = n-1,
+			joke_list = [
 		'Q: What goes up and down but does not move?\nA: Stairs',
 		'Q: Where should a 500 pound alien go?\nA: On a diet',
 		'Q: What did one toilet say to the other?\nA: You look a bit flushed.',
@@ -21,6 +25,23 @@
 	]
 
 	document.getElementById('joke_button').addEventListener('click', function(){
-		// document.getElementById("demo").innerHTML = "Hello World";
+		generateJoke();
 	});
+
+	function getRandomInt(min, max) {		//returns a random integer
+			min = Math.ceil(min);
+				max = Math.floor(max);
+				num = Math.floor(Math.random() * (max - min + 1)) + min;
+		console.log(num);
+		return num;
+	}
+
+	function generateJoke() {			//generates a random joke
+		j = getRandomInt(min, max);
+		console.log(j);
+
+		joke = joke_list[j];
+		console.log(joke);
+		return joke;
+	}
 }());
