@@ -16,7 +16,8 @@ body {
 	text-align: center;
 	/* display: center; */
     flex-direction: column;
-	align-content: center;
+    align-content: center;
+    
 }
 
 body * {
@@ -30,23 +31,50 @@ body * {
     left: 45%;
     top:400px;
 }
+.centreMusic {
+    position: absolute;
+    width: 70px;
+    left: 90%;
+    top:490px;
+}
 
+.centreGame  {
+	position: absolute;
+	width: 75px;
+	left: 90%;
+	top: 570px;
+}
+
+.relaxation_button {
+	position: absolute;
+	width: 70px;
+	height: 60px;
+	left: 90.3%;
+	top: 410px;
+	font-style: italic;
+	font-weight: bold;
+	color: #333333;
+	background:greenyellow;
+	
+}
 
 h1 {
 /* 	margin-top: 5%; */
-	color: #333333;;
+	color: #333333;
 	font-size: 5em;
 	font-family: Verdana;
-	text-align: center;
-
-	text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+    text-align: center;
+    line-height: 1em;
+    white-space: pre-wrap;
+    text-shadow: 4px 7px 1px #FFFFFF, 6px 5px 7px rgba(0,0,0,0.15);
+    word-wrap: break-word;
 }
 
 footer{
     position: absolute;
     text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
     top: 600px;
-    left: 25%;
+    left: 28%;
 }
 
 p {
@@ -115,10 +143,6 @@ a#joke_button {
     right: 0px;
     width: 0px;
     /* width : 10px; */
-}
-a#joke_button:visited img, a#joke_button:active img {
-    /* background-image: url(button1.png); */
-    
 }
 
 #container {
