@@ -9,7 +9,8 @@ html {
 }
 
 body {
-	background-color:gold;
+    background-image: url("smile.gif");
+	background-color: gold;
 	height: 100%;
 }
 
