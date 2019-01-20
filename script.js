@@ -26,6 +26,7 @@
 
 	document.getElementById('joke_button').addEventListener('click', function(){
 		generateJoke();
+		changeImage();
 	});
 
 	function getRandomInt(min, max) {		//returns a random integer
@@ -39,5 +40,19 @@
 		j = getRandomInt(min, max);
 		console.log(joke_list[j], j)
 		text_element.innerHTML = joke_list[j]
+	}
+
+
+	function changeImage(element){
+		var x = document.getElementById("image0");
+		var v = x.getAttribute("src");
+  		if(v === "button1.png"){
+			v = "button2.png";
+		}	
+		  else{
+			  v = "button3.png";
+		}
+    		
+  		x.setAttribute("src", v);	
 	}
 }());
