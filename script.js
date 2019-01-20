@@ -1,3 +1,4 @@
+var q = 0;
 (function () {
 	var text_element = document.getElementById('joke_text'),
 			min = 0,
@@ -23,10 +24,13 @@
 		'Q: What did the laundryman say to the impatient customer?\nA: Keep your shirt on!'
 	],
 			max = joke_list.length
-
+	
 	document.getElementById('joke_button').addEventListener('click', function(){
+		q = q +1;
+		q = q % 5;
 		generateJoke();
-		changeImage();
+		changeImage(q);
+		
 	});
 
 	function getRandomInt(min, max) {		//returns a random integer
@@ -42,17 +46,11 @@
 		text_element.innerHTML = joke_list[j]
 	}
 
+	var img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png"];
 
-	function changeImage(element){
+	function changeImage(index){
 		var x = document.getElementById("image0");
-		var v = x.getAttribute("src");
-  		if(v === "button1.png"){
-			v = "button4.png";
-		}	
-		  else{
-			  v = "button3.png";
-		}
-    		
-  		x.setAttribute("src", v);	
+		// var v = x.getAttribute("src");	
+  		x.setAttribute("src", img_button[index]);	
 	}
 }());
