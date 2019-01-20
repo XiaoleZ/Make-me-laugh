@@ -2,7 +2,6 @@
 	var min = 0,
 			j, joke, num,
 			n = 2,
-			max = n-1,
 			joke_list = [
 		'Q: What goes up and down but does not move?\nA: Stairs',
 		'Q: Where should a 500 pound alien go?\nA: On a diet',
@@ -22,7 +21,8 @@
 		'Q: We\'re you long in the hospital?\nA: No, I was the same size I am now!',
 		'Q: Why couldn\'t the pirate play cards?\nA: Because he was sitting on the deck!',
 		'Q: What did the laundryman say to the impatient customer?\nA: Keep your shirt on!'
-	]
+	],
+			max = joke_list.length
 
 	document.getElementById('joke_button').addEventListener('click', function(){
 		generateJoke();
