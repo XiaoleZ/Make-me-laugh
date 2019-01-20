@@ -6,41 +6,46 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-    background-image: url("smile.gif");
+    background-image: url('smile.gif');
 	background-color: gold;
 	height: 100%;
 	align-items: center;
 	text-align: center;
 	display: center;
     flex-direction: column;
-	align-content: center;
-}
-
-body * {
-	flex: 1;
+	justify-content: space-evenly;
+	font-family: 'Sura', serif;
 }
 
 h1 {
-/* 	margin-top: 5%; */
 	color:black;
-	font-size: 5em;
-	font-family: Verdana;
+	font-size: 3em;
 	text-align: center;
+	margin: 0 4%;
 }
 
 p {
-	color: darkblue;
-	font-size:2em;
+	font-size: 2em;
 }
 
+footer {
+	position: absolute;
+	bottom: 3%;
+}
+
+<<<<<<< HEAD
 /* button { */
 /* 	margin-bottom: 5%; */
     /* background: url("button1.png");
+=======
+button {
+>>>>>>> c70a65af62fbb474e480137ecba72b6dc3786920
 	height: 5%;
 	font-size: 6em;
 	background: none;
 	border: none;
 	outline: none;
+<<<<<<< HEAD
 } */
 
 /* form input[type=submit] {
@@ -65,6 +70,14 @@ a#joke_button:visited img, a#joke_button:active img {
     left: 0px;
     right: 0px;
     
+=======
+	transform-origin: 50% 50%;
+	transition: transform .5s;
+}
+
+button:hover {
+	transform: scale(1.2);
+>>>>>>> c70a65af62fbb474e480137ecba72b6dc3786920
 }
 
 #container {
