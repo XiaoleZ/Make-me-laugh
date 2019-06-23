@@ -1,9 +1,8 @@
-var q = 0;
-(function () {
-	var text_element = document.getElementById('joke_text'),
-			min = 0,
-			j, joke, num,
-			joke_list = [
+(() => {
+	let text_element = document.getElementById('joke_text'),
+	min = 0,
+	j, joke, num,
+	joke_list = [
 		'What does rhyme with cucumber?\nYour number',
 		'Where should a 500 pound alien go?\nOn a diet',
 		'What did one toilet say to the other?\nYou look a bit flushed.',
@@ -78,44 +77,43 @@ var q = 0;
 		'Sometimes I tuck my knees into my chest and lean forward.<br>That’s just how I roll.',
 		'Cole’s Law: Thinly Sliced Cabbage<br>50. I intend to live forever.'
 	],
-			max = joke_list.length-1
+	max = joke_list.length-1;
 
-	document.getElementById('joke_button').addEventListener('click', function(){
+	document.getElementById('joke_button').addEventListener('click', () => {
+		let q = 0;
 		q = q +1;
 		q = q % 7;
 		generateJoke();
 		changeImage(q);
 		generateImg();
-
 	});
 
-	function getRandomInt(min, max) {		//returns a random integer
+	const getRandomInt = (min, max) => {		//returns a random integer
 		min = Math.ceil(min);
 		max = Math.floor(max);
 		num = Math.floor(Math.random() * (max - min + 1)) + min;
 		return num;
 	}
 
-	function generateJoke() {			//generates a random joke
+	const generateJoke = () => {			//generates a random joke
 		j = getRandomInt(min, max);
 		console.log(joke_list[j], j)
 		text_element.innerHTML = joke_list[j]
 	}
 
-	var bg_img = ['background3.gif', 'background2.gif', 'dog3.gif','dog4.gif','dog5.gif','tech1.gif','tech2.gif','tech3.gif','tech4.gif','cartoon1.gif','cartoon2.gif','cartoon3.gif','cartoon4.gif','bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif','dog3.gif'],
+	let bg_img = ['background3.gif', 'background2.gif', 'dog3.gif','dog4.gif','dog5.gif','tech1.gif','tech2.gif','tech3.gif','tech4.gif','cartoon1.gif','cartoon2.gif','cartoon3.gif','cartoon4.gif','bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif','dog3.gif'],
 	img_max = bg_img.length-1
 
-	function generateImg() {
+	const generateImg = () => {
 		j = getRandomInt(min, img_max);
 		console.log(bg_img[j], j)
 		document.body.style.backgroundImage="url('"+bg_img[j]+"')"
 	}
 
-	var img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png","button6.png","button7.png"];
+	let img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png","button6.png","button7.png"];
 
-	function changeImage(index){
-		var x = document.getElementById("image0");
-		// var v = x.getAttribute("src");
+	const changeImage = (index) => {
+		let x = document.getElementById("image0");
   		x.setAttribute("src", img_button[index]);
 	}
 }());
