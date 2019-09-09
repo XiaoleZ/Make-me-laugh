@@ -97,17 +97,17 @@
 
 	const generateJoke = () => {			//generates a random joke
 		j = getRandomInt(min, max);
-		console.log(joke_list[j], j)
-		text_element.innerHTML = joke_list[j]
+		console.log(joke_list[j], j);
+		text_element.innerHTML = joke_list[j];
 	}
 
-	let bg_img = ['background3.gif', 'background2.gif', 'dog3.gif','dog4.gif','dog5.gif','tech1.gif','tech2.gif','tech3.gif','tech4.gif','cartoon1.gif','cartoon2.gif','cartoon3.gif','cartoon4.gif','bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif','dog3.gif'],
-	img_max = bg_img.length-1
+	let bg_img = ['background3.gif', 'background2.gif', 'dog3.gif','dog4.gif','dog5.gif','tech1.gif','tech2.gif','tech3.gif','tech4.gif','cartoon1.gif','cartoon2.gif','cartoon3.gif','cartoon4.gif','bird1.gif','cat1.gif','cat2.gif','dog1.gif','dog2.gif','sky1.gif','water1.gif','smile.gif','dog3.gif'];
+	let img_max = bg_img.length-1;
 
 	const generateImg = () => {
 		j = getRandomInt(min, img_max);
 		console.log(bg_img[j], j)
-		document.body.style.backgroundImage="url('"+bg_img[j]+"')"
+		document.body.style.backgroundImage="url('"+bg_img[j]+"')";
 	}
 
 	let img_button = ["button1.png","button2.png","button3.png","button4.png","button5.png","button6.png","button7.png"];
